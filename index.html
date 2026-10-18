@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivam Quiz</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="brand">🧠 <span>SHIVAM QUIZ</span></div><p>सोचो • सीखो • जीतो</p></header>
+<main class="wrap">
+<section id="home" class="panel">
+<h1>अपना विषय चुनो</h1><p class="sub">हर विषय में उपलब्ध सवालों से अभ्यास करो।</p>
+<div class="subjects">
+<button class="subject-btn" data-subject="GK"><span>🌍</span><b>सामान्य ज्ञान (GK)</b><small>देश-दुनिया के सवाल</small></button>
+<button class="subject-btn" data-subject="Science"><span>🔬</span><b>विज्ञान</b><small>Science questions</small></button>
+<button class="subject-btn" data-subject="History"><span>🏛️</span><b>इतिहास</b><small>History questions</small></button>
+<button class="subject-btn" data-subject="Geography"><span>🌏</span><b>भूगोल</b><small>Geography questions</small></button>
+<button class="subject-btn" data-subject="Math"><span>➗</span><b>गणित</b><small>Math questions</small></button>
+<button class="subject-btn" data-subject="Computer"><span>💻</span><b>कंप्यूटर</b><small>Computer questions</small></button>
+</div><p id="status" role="status"></p>
+</section>
+<section id="quiz" class="panel" hidden>
+<div class="quiz-head"><button id="homeBtn" class="secondary">← विषय</button><span id="subjectTitle">Quiz</span></div>
+<p id="questionCount" class="count"></p><h2 id="questionText"></h2><div id="options" class="options"></div><p id="feedback" aria-live="polite"></p><button id="nextBtn" class="primary" disabled>अगला सवाल ➜</button>
+</section>
+<section id="result" class="panel" hidden><div class="trophy">🏆</div><h1>क्विज़ पूरा हुआ!</h1><p id="scoreText" class="score"></p><button id="retryBtn" class="primary">फिर से खेलो</button><button id="resultHomeBtn" class="secondary">विषय चुनो</button></section>
+</main><footer>© Shivam Quiz</footer>
+<script src="question_bank.js"></script><script src="script.js"></script>
+</body></html>
